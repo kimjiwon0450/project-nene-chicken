@@ -5,6 +5,8 @@ import NonMemberLogin from './guest-login/NonMemberLogin';
 
 const LoginView = () => {
   const [selectMember, isSelectMember] = useState(true);
+  const [submitLogin, setSubmitLogin] = useState(false);
+
 
   return (
     <div className='login-view'>
