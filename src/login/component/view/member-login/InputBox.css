@@ -1,0 +1,34 @@
+.input-box {
+  position: relative;
+  padding: 1.5rem 1.5rem;
+  border: 0.5px solid #79747e;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.input-box .abs-text {
+  position: absolute;
+  top: -9px;
+  background: #fff;
+  padding: 0 10px;
+  color: #efba00;
+  font-weight: 500;
+  font-family: 'Poppins';
+}
+
+.input-box .input-inner {
+  display: flex;
+  align-items: center;
+}
+
+.input-box .input-inner input {
+  border: none;
+  outline: none;
+  caret-color: #efba00;
+  flex: 1;
+}
+
+.input-box .input-inner .inner-icon {
+  padding-right: 20px;
+  width: 11px;
+}
