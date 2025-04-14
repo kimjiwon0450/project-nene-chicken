@@ -1,0 +1,269 @@
+/* 전체 네비게이션 컨테이너 */
+.nav-container {
+  width: 100%;
+  font-family:
+    'Pretendard',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+  color: #000;
+}
+
+/* 상단 네비게이션 스타일 */
+.top-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 8px 32px;
+  font-size: 12px; /* 위쪽 메뉴 글자 크기 작게 설정 */
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
+}
+
+.top-nav-left {
+  display: flex;
+  gap: 24px; /* 상단 메뉴 간격 넓게 설정 */
+}
+
+.top-nav-item {
+  padding: 0 8px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #000;
+  transition: color 0.3s ease;
+  font-size: 9px; /* 아래 메뉴 글자 크기 더더 작게 */
+}
+
+.top-nav-item:hover,
+.top-nav-item.active {
+  color: #fbb308;
+}
+
+.top-nav-item.active {
+  font-weight: bold;
+}
+
+/* '홈', '창업', '브랜드 소개' 메뉴 항목 크기 증가 */
+.top-nav-item:nth-child(1), /* 홈 */
+.top-nav-item:nth-child(2), /* 창업 */
+.top-nav-item:nth-child(3) {
+  /* 브랜드소개 */
+  font-size: 14px; /* 기존 크기의 1.5배 정도로 설정 */
+}
+
+/* 배달 위치 관련 스타일 */
+.delivery-location {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.location-icon {
+  height: 20px;
+  width: 20px;
+  color: #fbb308;
+  cursor: pointer;
+}
+
+.location-text {
+  font-weight: 700; /* 아래 메뉴와 동일한 굵기 */
+  font-size: 20px; /* 아래 메뉴 글자 크기 더 작게 */
+  color: #4e2e0c; /* 텍스트 색상 갈색으로 설정 */
+  margin-left: 4px;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.location-text:hover {
+  color: #fbb308;
+}
+
+/* 로그인 버튼 */
+.top-nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  color: #000;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: color 0.3s ease;
+}
+
+.login-button:hover {
+  color: #444;
+}
+
+/* 메인 네비게이션 */
+.main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px; /* 아래 메뉴와의 구분을 위해 약간의 여백을 추가 */
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.logo-container {
+  width: 160px; /* 로고 크기 확장 */
+  height: 60px; /* 로고 크기 확장 */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  overflow: hidden; /* 로고 크기에 맞춰 자르기 */
+}
+
+.logo-image {
+  width: 100%; /* 이미지가 컨테이너에 꽉 차게 */
+  height: 100%; /* 이미지가 컨테이너에 꽉 차게 */
+  object-fit: cover; /* 이미지가 꽉 차게 하고 크기 손상 없이 자르기 */
+  background-color: transparent; /* 배경을 투명하게 설정 */
+}
+
+/* 메인 메뉴 */
+.main-menu {
+  display: flex;
+  gap: 80px; /* 간격 더 넓게 */
+  font-weight: 700; /* 더 굵게 */
+  font-size: 26px; /* 글자 크기 약간 줄여줌 */
+  color: #000;
+  line-height: 1.6; /* 글자 간격 추가 */
+  padding: 20px 0; /* 아래 메뉴 높이를 늘림 */
+  white-space: nowrap; /* 메뉴 항목들을 한 줄로 정리 */
+}
+
+.main-menu-item {
+  padding: 12px 16px; /* 메뉴 항목에 여백 추가 */
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #000;
+  font-size: inherit;
+  font-weight: inherit;
+  transition: color 0.3s ease;
+}
+
+.main-menu-item:hover {
+  color: #fbb308;
+}
+
+/* 아이콘 */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px; /* 아이콘 간격 늘림 */
+}
+
+.icon-button {
+  padding: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.icon-button img {
+  width: 36px; /* 기본 아이콘 크기 */
+  height: 36px; /* 기본 아이콘 크기 */
+  cursor: pointer;
+}
+
+/* cart 아이콘만 크기 조금 줄이기 */
+.cart-icon img {
+  width: 30px; /* Cart 아이콘 크기 줄이기 */
+  height: 30px; /* Cart 아이콘 크기 줄이기 */
+}
+
+/* 모바일 화면을 위한 스타일 (기기 화면 크기가 768px 이하일 때) */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+  /* 상단 네비게이션 스타일 */
+  .top-nav {
+    flex-direction: column;
+    padding: 8px 16px;
+  }
+
+  .top-nav-left {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .top-nav-item {
+    padding: 0 6px;
+    font-size: 8px;
+    margin-right: 10px;
+  }
+
+  .delivery-location {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .main-menu-item {
+    font-size: 16px;
+  }
+
+  .nav-icons {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .icon-button img {
+    width: 28px; /* 모바일에서 아이콘 크기 키움 */
+    height: 28px; /* 모바일에서 아이콘 크기 키움 */
+  }
+}
+
+/* 더 작은 모바일 화면을 위한 스타일 (기기 화면 크기가 480px 이하일 때) */
+@media (max-width: 480px) {
+  .top-nav,
+  .main-nav {
+    padding: 5px 10px;
+  }
+
+  .top-nav-item {
+    font-size: 7px; /* 아래 메뉴 글자 크기 더 작게 */
+  }
+
+  .main-menu-item {
+    font-size: 14px;
+  }
+
+  .icon-button img {
+    width: 24px;
+    height: 24px;
+  }
+}
