@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './LoginView.css';
 import MemberLogin from './member-login/MemberLogin';
 import NonMemberLogin from './guest-login/NonMemberLogin';

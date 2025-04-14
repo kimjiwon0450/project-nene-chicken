@@ -11,7 +11,6 @@
   letter-spacing: -0.02em;
   color: #1c1b1f;
   vertical-align: middle;
-  padding-bottom: 10px;
 }
 
 .inputForm .flex {
@@ -35,6 +34,9 @@
   margin-right: 10px !important ;
 }
 
+.pb-10 {
+  padding-bottom: 10px !important;
+}
 .inputForm select {
   font-family: 'Poppins', 'Noto Sans KR', sans-serif;
   font-weight: 500;
@@ -59,4 +61,46 @@
   padding: 0.7rem 0;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.inputForm .guest-relative {
+  position: relative;
+  width: 60%;
+}
+
+.inputForm .timer-title {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translate(-8%, -50%);
+  font-weight: 400;
+  font-size: 0.94rem;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  color: #a84700;
+  font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+}
+
+.inputForm .btn-confirmNum {
+  background: #a9a9a9;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.94rem;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  padding: 13px 0;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  padding: 13px 0;
+}
+
+.inputForm .info-title {
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  color: #a84700;
 }

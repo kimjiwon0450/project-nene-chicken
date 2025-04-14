@@ -1,0 +1,39 @@
+.term-check {
+  display: flex;
+  align-items: center;
+  padding: 1rem 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.R-check {
+  display: flex;
+  width: 100%;
+  position: relative;
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.R-check input[type='checkbox'] {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 22px;
+  height: 22px;
+  z-index: 1;
+  margin: 0;
+}
+
+.R-check .privacy {
+  position: relative;
+  margin: 0;
+  min-height: 18px;
+  vertical-align: middle;
+  word-break: break-all;
+  padding-left: 40px;
+  cursor: pointer;
+}
