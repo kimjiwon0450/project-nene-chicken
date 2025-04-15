@@ -22,14 +22,27 @@ a:hover {
   color: #535bf2;
 }
 
+/* ✅ 핵심 개선: 중앙정렬 제거 및 유연한 레이아웃 구성 */
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column; /* 수직 정렬 방식 */
+  align-items: stretch;    /* 중앙 정렬 해제 */
   min-width: 320px;
   min-height: 100vh;
 }
 
+/* ✅ 루트 컨테이너에서 레이아웃 보존 */
+html,
+body,
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* ✅ 예시용 제목 */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -67,10 +80,3 @@ button:focus-visible {
   }
 }
 
-html,
-body,
-#root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
