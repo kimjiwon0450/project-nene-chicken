@@ -104,3 +104,7 @@
   letter-spacing: -0.03em;
   color: #a84700;
 }
+
+.deactivate {
+  display: none;
+}

@@ -26,12 +26,23 @@ const MemberLogin = () => {
   const loginSaveHandler = () => isLoginSave(!loginSave);
 
   const submitLoginHandler = () => {
+    let finalID = currID;
+    let finalPW = currPW;
+
+    const remainedID = localStorage.getItem('savedID') ?? '';
+    const remainedPW = localStorage.getItem('savedPW') ?? '';
+    if (currID === '' && remainedID !== '') finalID = remainedID;
+    if (currPW === '' && remainedPW !== '') finalPW = remainedPW;
+
     // 아이디 비밀번호 맞는 지 확인
-    if (currID === 'aaaa' && currPW === '1111') {
+    if (finalID === 'aaaa' && finalPW === '1111') {
       // 로그인 성공 처리
       // 1. 버튼 입력에 따라 local storage 저장
       if (IDSave) localStorage.setItem('savedID', currID);
-      if (loginSave) localStorage.setItem('savedPW', currPW);
+      if (loginSave) {
+        localStorage.setItem('savedPW', currPW);
+        localStorage.setItem('savedID', currID);
+      }
     } else {
       alert('잘못된 아이디와 비밀번호 입니다.');
       localStorage.removeItem('savedID');
@@ -58,8 +69,8 @@ const MemberLogin = () => {
         currVal={PWChangeHandler}
       />
       <div className='id-check-box'>
-        <LoginCheckBox text={'아이디 저장'} handler={IDSaveHandler} />
-        <LoginCheckBox text={'자동 로그인'} handler={loginSaveHandler} />
+        <LoginCheckBox text={'아이디 저장'} handler={IDSaveHandler} storageKey={'savedID'} />
+        <LoginCheckBox text={'자동 로그인'} handler={loginSaveHandler} storageKey={'savedPW'} />
       </div>
       <div className='login-btn-box'>
         <div className='btn-login' onClick={submitLoginHandler}>
