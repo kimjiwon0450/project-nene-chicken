@@ -1,0 +1,48 @@
+.SNS-login {
+  padding: 1.5rem 0 2rem;
+}
+
+.SNS-login p {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+.SNS-login .SNS-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0 5px;
+}
+
+.SNS-login .SNS-box .btnSNS {
+  position: relative;
+  background-color: #eee;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+}
+
+.SNS-login .SNS-box .kakao {
+  background-color: #fee500;
+}
+
+.SNS-login .SNS-box .naver {
+  background-color: #03cf5d;
+}
+
+.SNS-login .SNS-box .apple {
+  background-color: #000000;
+}
+
+.SNS-login .SNS-box .btnSNS img {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

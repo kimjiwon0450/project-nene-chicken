@@ -1,0 +1,132 @@
+.info-box {
+  padding: 2rem 4rem;
+}
+
+.info-box .user-title {
+  color: #080808;
+  font-size: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.info-box .user-title .user {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.info-box .user-title .btn-user {
+  font-size: 1.125rem;
+  padding: 0 5px 3px;
+  cursor: pointer;
+}
+
+.info-box .user-title .btn-user:first-child {
+  position: relative;
+  padding-right: 15px;
+}
+
+.info-box .user-title .btn-user:first-child::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  width: 1px;
+  height: 60%;
+  background: #b1b1b1;
+  transform: translateY(-50%);
+}
+
+.info-box .my-menu-wrap {
+  display: flex;
+  background: #fff;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.info-box .point-box {
+  position: relative;
+  width: 30%;
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+}
+
+.info-box .point-box .list {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.info-box .point-box .list .count {
+  font-weight: 600;
+  font-size: 1.44rem;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.info-box .point-box .list .count span {
+  color: #fed100;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 3px;
+}
+
+.info-box .point-box .list .title {
+  font-size: 1.25rem;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.info-box .point-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: #ebebeb;
+  width: 1px;
+  height: 70%;
+  transform: translateY(-50%);
+}
+
+.info-box .menu-list {
+  display: flex;
+  flex: 1;
+  gap: 3rem;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.info-box .menu-list .btn-menu-route {
+  text-align: center;
+  font-size: 1.19rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.info-box .menu-list .btn-menu-route .icon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: #f5f5f5;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.info-box .menu-list .btn-menu-route .icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+}
+
+

@@ -1,0 +1,89 @@
+.order-box {
+  max-width: 1280px;
+  margin: 0 auto 8rem;
+}
+
+.order-box .inner-box {
+  padding: 2rem 5rem;
+}
+
+.order-box .inner-box form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.order-box .inner-box form .datatab {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: flex-end;
+}
+
+.order-box .inner-box form .datatab .tab {
+  width: 8%;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 13px;
+  cursor: pointer;
+}
+
+.order-box .inner-box form .datatab .tab:first-child {
+  border-radius: 10px 0px 0px 10px;
+  border-right: 0;
+}
+
+.order-box .inner-box form .datatab .tab:nth-child(2) {
+  border-right: 0;
+}
+
+.order-box .inner-box form .datatab .tab:last-child {
+  border-radius: 0px 10px 10px 0px;
+  border-left: 0;
+}
+
+.order-box .inner-box form .datatab .tab.on {
+  background: #5a3c1c;
+  color: #fff;
+  font-weight: bold;
+}
+
+.order-box .order-content {
+  margin: auto;
+  padding-top: 50px;
+}
+
+.order-box .order-content .content-none {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.order-box .order-content .content-none img {
+  width: 70px;
+}
+
+.order-box .order-content .content-none .name-title {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #000000;
+  margin-top: 1rem;
+}
+
+.order-box .order-content .content-none .btn-add-order {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  background: #f4b310;
+  text-align: center;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.9rem 3rem;
+  cursor: pointer;
+  margin-top: 4rem;
+}
