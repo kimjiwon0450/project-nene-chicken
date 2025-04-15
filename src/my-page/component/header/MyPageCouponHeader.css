@@ -1,0 +1,26 @@
+.coupon-header-tab {
+  display: flex;
+  padding: 7px 2rem 0;
+  gap: 3rem;
+}
+
+.coupon-header-tab .tab {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.19rem;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #474747;
+  cursor: pointer;
+}
+
+.coupon-header-tab .tab .on {
+  border-bottom: 3px solid #333333;
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 5px 3px;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.25rem;
+}

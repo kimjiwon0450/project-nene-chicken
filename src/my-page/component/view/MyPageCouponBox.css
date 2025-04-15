@@ -1,0 +1,32 @@
+.coupon-wrap {
+  padding: 20px 0 0;
+}
+
+.coupon-wrap .content-title {
+  width: 45%;
+  font-weight: 300;
+  font-size: 1.75rem;
+  color: #000000;
+  text-align: left;
+  line-height: 2.3rem;
+  letter-spacing: -0.06em;
+  padding: 3rem 2rem 1rem;
+}
+
+.coupon-wrap .coupon-down-wrap {
+  padding: 20px 0 0;
+}
+
+.coupon-wrap .coupon-down-wrap .down-flex {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+.coupon-wrap .coupon-box .down-flex .down-flex-line {
+  width: 1px;
+  height: 100%;
+  background: #ddd;
+  position: absolute;
+  left: 50%;
+}

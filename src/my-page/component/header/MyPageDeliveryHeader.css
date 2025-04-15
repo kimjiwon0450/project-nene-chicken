@@ -1,0 +1,11 @@
+.delivery-header-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delivery-header-tab .title-wrap {
+  color: #212121;
+  font-size: 1.4rem;
+  font-weight: 500;
+}

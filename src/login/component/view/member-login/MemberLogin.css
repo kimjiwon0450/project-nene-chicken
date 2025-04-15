@@ -1,0 +1,51 @@
+.login-member {
+  padding: 2rem 0 0;
+}
+
+.login-member .id-check-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 19px 10px 30px;
+}
+
+.login-line {
+  border: 5px solid #f5f5f5;
+  margin: 30px 0;
+}
+
+.login-btn-box {
+  display: flex;
+}
+
+.login-btn-box .btn-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-right: 20px;
+  padding: 0.9rem 24px;
+  background: #efba00;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.login-btn-box .btn-join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 15px 24px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 100px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
