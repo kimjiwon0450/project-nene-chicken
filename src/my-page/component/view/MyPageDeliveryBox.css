@@ -1,0 +1,95 @@
+.delivery-box {
+  max-width: 1280px;
+  margin: 0 auto 8rem;
+}
+
+.delivery-box .delivery-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 3rem 5rem;
+}
+
+.delivery-box .delivery-wrap .add-btn-box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.delivery-box .delivery-wrap .add-btn-box .btn-now {
+  border: 1px solid #4f2e0c;
+  color: #4f2e0c;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.delivery-box .delivery-wrap .add-btn-box .btn-add {
+  background: #4f2e0c;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.delivery-box .delivery-wrap .address-box {
+  padding: 20px 0 0;
+}
+
+.delivery-box .delivery-wrap .address-box .add-wrap {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.address-box .add-wrap .add-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.address-box .add-wrap .add-box .add-content {
+  flex: 1;
+  padding: 2rem 2rem;
+}
+
+.address-box .add-wrap .add-box .add-content .title {
+  display: flex;
+  font-weight: 500;
+  font-size: 1.19rem;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.address-box .add-wrap .add-box .add-content .sub-title {
+  display: flex;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #575757;
+  align-items: center;
+}
+
+.address-box .add-wrap .add-box .add-content .sub-title .add-none {
+  font-weight: 400;
+  color: #838383;
+}
+
+.address-box .add-wrap .add-box .add-content .title .title-span {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.address-box .add-wrap .add-box .add-content .title img {
+  width: 20px;
+  margin-right: 8px;
+}
