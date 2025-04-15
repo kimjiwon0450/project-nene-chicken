@@ -1,0 +1,177 @@
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css');
+.service-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3열로 배치 */
+  gap: 1rem; /* 버튼 사이 간격 */
+  max-width: 1200px; /* 전체 컨테이너 최대 너비 */
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.service-button {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.service-button:hover {
+  transform: translateY(-5px);
+}
+
+.service-button img {
+  max-height: 60px; /* 아이콘 크기 조정 */
+  margin-bottom: 1rem;
+}
+
+.service-button h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.service-button p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+.SubBannerWrap .SubBanner {
+  display: flex;
+}
+
+.SubBannerWrap .SubBanner div img {
+  width: 200px;
+}
+
+.SubBannerWrap {
+  border-radius: 10px;
+  width: 150%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.SubBanner .SbanBox {
+  width: 33%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 25px;
+  border-radius: 15px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+
+  margin-right: 20px;
+}
+
+.Cpointer {
+  cursor: pointer;
+}
+
+.SubBanner .SbanBox.color1 {
+  background: #43270b;
+  color: #fff;
+}
+
+.SubBanner .SbanBox.color1 img {
+  width: 120px;
+}
+
+.SubBanner .SbanBox.color2 {
+  background: #f4b310;
+  color: #000000;
+}
+
+.SubBanner .SbanBox.color2 img {
+  width: 80px;
+}
+
+.SubBanner .SbanBox.color3 {
+  background: #e7e7e7;
+  color: #000000;
+}
+
+.SubBanner .SbanBox.color3 img {
+  width: 80px;
+}
+
+.SubBanner .SbanBox:last-child {
+  margin-right: 0;
+}
+
+.SubProcess {
+  background: #f9f9f9;
+  padding: 1.5rem 0;
+  width: 100%;
+}
+
+.SubProcess .ProcessBox {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.SubProcess .ProcessBox .ProcessList {
+  max-width: calc(33% - 5px);
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.SubProcess .ProcessBox .ProcessList .PS_title {
+  position: relative;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 300;
+  margin: 8px 0 15px;
+  width: 40%;
+}
+.SubProcess .ProcessBox .ProcessList .PS_Stitle {
+  color: #bf8c0a;
+  font-weight: 500;
+  line-height: 19px;
+  font-size: 1.125rem;
+}
+
+.SubProcess .ProcessBox .ProcessList .PS_title .tBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+SubProcess .ProcessBox .ProcessList .PS_title .PStype {
+  font-weight: 500;
+}
+
+SubProcess .ProcessBox .ProcessList .PS_title .tBox .ticon img {
+  width: 20px;
+}
+
+.PStype {
+  font-weight: 700;
+}
+
+#btnTop {
+  position: fixed;
+  right: 3.4%;
+  top: 90%;
+  transform: translate(-3.4%, -90%);
+  z-index: 99;
+  width: 64px;
+  height: 65px;
+  border-radius: 50%;
+  background: #584c3e;
+  box-shadow: 2px 3px 2px #272727;
+  cursor: pointer;
+}
