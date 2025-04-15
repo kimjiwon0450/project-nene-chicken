@@ -10,8 +10,14 @@ import LogoImage from '../assets/logo.png'; // ✅ 로고 이미지 import
 import RiderIcon from '../assets/rider.png';
 import StoreIcon from '../assets/store.png';
 import CancelIcon from '../assets/cancel.png';
+import { useNavigate } from 'react-router';
+import { useLogin } from '../context/loginContext';
 
 function ChickenNavBar() {
+  const navigator = useNavigate();
+
+  const { isLogin, logout } = useLogin();
+
   const mainMenuItems = ['주문', '메뉴', '쿠폰 사용하기', '선물하기', '매장안내', '이벤트/공지'];
   const topMenuItems = ['홈', '창업', '브랜드소개'];
   const [modalOpen, setModalOpen] = useState(false);
@@ -26,13 +32,28 @@ function ChickenNavBar() {
     }
   };
 
+  const brandHandler = (e) => {
+    if (e.target.classList.contains('1')) {
+      navigator('/brand_startup');
+    }
+  };
+
+  const logoutHandler = () => {
+    logout();
+    navigator('/');
+  };
+
   return (
     <div className='nav-container'>
       {/* 상단 네비게이션 */}
       <div className='top-nav'>
         <div className='top-nav-left'>
           {topMenuItems.map((item, index) => (
-            <button key={index} className={`top-nav-item ${index === 0 ? 'active' : ''}`}>
+            <button
+              key={index}
+              className={`top-nav-item ${index} ${index === 0 ? 'active' : ''}`}
+              onClick={brandHandler}
+            >
               {item}
             </button>
           ))}
@@ -44,8 +65,13 @@ function ChickenNavBar() {
           <span className='location-text'>어디로 배달해 드릴까요?</span>
         </div>
 
-        <div className='top-nav-right'>
-          <button className='login-button'>로그인</button>
+        <div
+          className='top-nav-right'
+          onClick={() => {
+            isLogin ? logoutHandler() : navigator('/login');
+          }}
+        >
+          <button className='login-button'>{isLogin ? '로그아웃' : '로그인'}</button>
         </div>
       </div>
 
@@ -71,7 +97,12 @@ function ChickenNavBar() {
 
         {/* 계정 및 장바구니 아이콘 */}
         <div className='nav-icons'>
-          <button className='icon-button user-icon'>
+          <button
+            className='icon-button user-icon'
+            onClick={() => {
+              isLogin ? navigator('/mypage') : navigator('/login');
+            }}
+          >
             <img src={UserIcon} alt='사용자 아이콘' />
           </button>
           <button className='icon-button cart-icon'>

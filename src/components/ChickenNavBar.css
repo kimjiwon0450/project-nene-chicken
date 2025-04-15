@@ -9,7 +9,7 @@
     Roboto,
     sans-serif;
   background-color: #fff;
-  min-height: 100vh; /* 화면 높이 최소 보장 */
+  max-height: 100vh; /* 화면 높이 최소 보장 */
   color: #000;
   position: relative; /* absolute 자식 위치 기준점으로 설정 */
   z-index: 1; /* 다른 레이어보다 기본적으로 아래에 위치 */

@@ -6,6 +6,8 @@ import { faLock } from '@fortawesome/free-solid-svg-icons';
 import LoginCheckBox from './LoginCheckBox';
 import LoginSNS from './LoginSNS';
 import LoginFind from './LoginFind';
+import { useLogin } from '../../../../context/loginContext';
+import { useNavigate } from 'react-router';
 
 const MemberLogin = () => {
   const [savedId, setSavedId] = useState('');
@@ -14,6 +16,9 @@ const MemberLogin = () => {
   const [loginSave, isLoginSave] = useState(false);
   const [currID, setCurrID] = useState('');
   const [currPW, setCurrPW] = useState('');
+
+  const { login } = useLogin();
+  const navi = useNavigate();
 
   useEffect(() => {
     setSavedId(localStorage.getItem('savedID') ?? '');
@@ -39,10 +44,18 @@ const MemberLogin = () => {
       // 로그인 성공 처리
       // 1. 버튼 입력에 따라 local storage 저장
       if (IDSave) localStorage.setItem('savedID', currID);
+      else localStorage.removeItem('saveID');
+
       if (loginSave) {
         localStorage.setItem('savedPW', currPW);
         localStorage.setItem('savedID', currID);
+      } else {
+        localStorage.removeItem('savedID');
+        localStorage.removeItem('savedPW');
       }
+
+      login();
+      navi('/');
     } else {
       alert('잘못된 아이디와 비밀번호 입니다.');
       localStorage.removeItem('savedID');

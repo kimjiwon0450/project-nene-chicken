@@ -2,10 +2,14 @@ import TermCheckBox from './TermCheckBox';
 import './NonMemberLogin.css';
 import GuestInputContents from './GuestInputContents';
 import { useState } from 'react';
+import { useNavigate } from 'react-router';
 
 const NonMemberLogin = () => {
   const [agreeControl, setAgreeControl] = useState(0);
   const [confirmPhone, setConfirmPhone] = useState(false);
+
+  const { login } = useLogin();
+  const navi = useNavigate();
 
   const checkHandler = (ck) => {
     setAgreeControl(agreeControl + ck);
@@ -37,6 +41,8 @@ const NonMemberLogin = () => {
     }
 
     // 로그인 처리
+    login();
+    navi('/');
   };
 
   return (

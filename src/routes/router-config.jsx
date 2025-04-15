@@ -1,10 +1,12 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // import LoginPage from '../pages/IndexPage';
 import LoginPage from '../login/LoginPage';
-import Mypage from '../my-page/Mypage';
-import RootLayout from '../components/RootLayout';
+import Mypage from '../my-page/MyPage';
+import RootLayout from '../components/Rootlayout';
 import BrandStartUp from '../BrandStartUp/BrandStartUp';
 import MainPage from '../components/MainPage';
+import { LoginProvider } from '../context/loginContext';
+import { useEffect } from 'react';
 
 // 라우터 설정
 export const router = createBrowserRouter([
@@ -26,7 +28,18 @@ export const router = createBrowserRouter([
         element: <Mypage />,
       },
     ],
-    path: 'brand_startup',
+  },
+  {
+    path: '/brand_startup',
     element: <BrandStartUp />,
   },
 ]);
+
+export default function Router() {
+  
+  return (
+    <LoginProvider>
+      <RouterProvider router={router} />
+    </LoginProvider>
+  );
+}
