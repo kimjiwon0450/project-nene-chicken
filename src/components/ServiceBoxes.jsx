@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'; // eslint-disable-line no-unused-vars
 import './ServiceBoxes.css';
 
 function ServiceBoxes() {
