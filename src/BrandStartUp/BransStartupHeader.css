@@ -1,0 +1,123 @@
+.HeaderWrap {
+  width: 100%;
+  font-family:
+    'Pretendard',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  background-color: #fff;
+  color: #000;
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Stick to the top of the viewport */
+  left: 0; /* Align with the left edge */
+  z-index: 1000; /* Ensure it stays above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+/* 상단 메뉴 */
+.TopNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  height: 60px;
+}
+.TopLeft {
+  display: flex;
+  gap: 40px;
+}
+.top-item {
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+}
+.top-item.active {
+  color: #000;
+  font-weight: bold;
+  border-bottom: 3px solid #eee;
+}
+/* 오른쪽 ENG 아이콘 */
+.TopRight {
+  font-size: 16px;
+  cursor: pointer;
+}
+.lang-icon img {
+  width: 80px;
+  height: 40px;
+}
+/* 구분선 */
+.divider {
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 40px;
+}
+/* 하단 메뉴 레이아웃 */
+.HMainBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 80px;
+}
+/* 왼쪽 로고 */
+.BottomLogoWrap {
+  width: 160px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BottomLogoWrap img {
+  width: 120px;
+  height: auto;
+}
+/* 가운데 메뉴 영역 */
+.MenuWrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.MainMenu {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 80px;
+}
+.menu-item {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+.menu-item:hover {
+  color: #fbb308;
+}
+.menu-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+}
+/* 주문 버튼 */
+.OrderButton {
+  background-color: #3b2208;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 36px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.OrderButton:hover {
+  background-color: #5b3913;
+}
+
+/* Add padding to body to prevent content from hiding behind fixed header */
+body {
+  padding-top: 172px; /* Adjust based on your header's total height (60px top nav + 1px divider + approx 111px bottom nav) */
+}
