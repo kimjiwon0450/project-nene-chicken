@@ -21,7 +21,8 @@ const TermCheckBoxModal = ({ isOpen, onClose }) => {
             <select value={selectedOption} onChange={(e) => setSelectedOption(e.target.value)}>
               <option value=''>약관을 선택하세요</option>
               <option value='service'>서비스 이용약관</option>
-              <option value='privacy'>개인정보 처리방침</option>
+              <option value='privacy1'>개인정보 처리방침</option>
+              <option value='privacy2'>위치기반 서비스 약관</option>
             </select>
           </div>
           <p>
