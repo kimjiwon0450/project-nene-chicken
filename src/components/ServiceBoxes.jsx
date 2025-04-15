@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './ServiceBoxes.css';
 
 function ServiceBoxes() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  // 스크롤 이벤트에 따라 버튼 보이기 여부 업데이트
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  // 부드럽게 최상단으로 스크롤
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  // 컴포넌트가 마운트될 때 스크롤 이벤트 등록
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
   return (
     <>
       <div className='SubBannerWrap'>
@@ -86,7 +111,11 @@ function ServiceBoxes() {
       </div>
 
       <div id='btnTop'>
-        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 6.5 3.79' />
+        {isVisible && (
+          <button onClick={scrollToTop} className='scroll-button'>
+            ▲
+          </button>
+        )}
       </div>
     </>
   );
