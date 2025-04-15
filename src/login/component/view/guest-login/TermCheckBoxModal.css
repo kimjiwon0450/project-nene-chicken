@@ -1,0 +1,65 @@
+.terms-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+  
+  .terms-modal-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 950px;
+    max-height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .terms-modal-box a {
+    font-size: 24px;
+    font-weight:900;
+    margin-left: 330px;
+    margin-bottom: 20px;
+  }
+  
+  .terms-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-right: 10px;
+    max-height: 500px; 
+    font-size: 20px;
+    color: #444;
+    line-height: 1.6;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 5px 5px;
+  }
+  
+.close {
+    margin-left: auto;
+}
+
+.select-wrapper {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+  }
+
+  .select-wrapper select {
+    width: 890px; 
+    height: 50px;
+    padding: 8px 12px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 2px solid #000000;
+    cursor: pointer;
+  }
