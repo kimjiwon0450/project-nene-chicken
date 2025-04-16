@@ -3,6 +3,7 @@ import './NonMemberLogin.css';
 import GuestInputContents from './GuestInputContents';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
+import { useLogin } from '../../../../context/loginContext';
 
 const NonMemberLogin = () => {
   const [agreeControl, setAgreeControl] = useState(0);

@@ -7,6 +7,10 @@ import BrandStartUp from '../BrandStartUp/BrandStartUp';
 import MainPage from '../components/MainPage';
 import { LoginProvider } from '../context/loginContext';
 import { useEffect } from 'react';
+import MyPageOrderBox from '../my-page/component/view/MyPageOrderBox';
+import MyPageInfoBox from '../my-page/component/view/MyPageInfoBox';
+import MyPageDeliveryBox from '../my-page/component/view/MyPageDeliveryBox';
+import MyPageCouponBox from '../my-page/component/view/MyPageCouponBox';
 
 // 라우터 설정
 export const router = createBrowserRouter(
@@ -25,8 +29,26 @@ export const router = createBrowserRouter(
           element: <LoginPage />,
         },
         {
-          path: 'mypage',
+          path: 'mypage/',
           element: <Mypage />,
+          children: [
+          {
+            index: true,
+            element: <MyPageInfoBox />,
+          },
+          {
+            path: 'order',
+            element: <MyPageOrderBox />,
+          },
+          {
+            path: 'delivery',
+            element: <MyPageDeliveryBox />,
+          },
+          {
+            path: 'coupon',
+            element: <MyPageCouponBox />,
+          },
+        ],
         },
       ],
     },
