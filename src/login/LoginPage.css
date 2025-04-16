@@ -1,4 +1,7 @@
 .login-page {
-  padding-top: 180px !important;
+  padding-top: 20px !important;
+  padding-bottom: 540px !important;
+  height: auto;
+  min-height: 100%;
+  box-sizing: border-box;
 }
-

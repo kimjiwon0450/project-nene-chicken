@@ -141,13 +141,14 @@
 
 .main-menu {
   display: flex;
-  gap: 80px;
+  width: 65%;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 22px;
   color: #000;
   line-height: 1.6;
   padding: 20px 0;
-  white-space: nowrap;
+
+  justify-content: space-between;
 }
 
 .main-menu-item {
@@ -266,5 +267,27 @@
   .icon-button img {
     width: 24px;
     height: 24px;
+  }
+}
+@media (max-width: 1150px) {
+  .main-menu {
+    font-size: 15px;
+  }
+
+  .logo-container {
+    width: 120px;
+    height: 45px;
+  }
+
+  .main-nav {
+    padding: 16px 18px;
+  }
+
+  .nav-icons {
+    gap: 12px;
+  }
+
+  .main-menu-item {
+    padding: 10px 8px;
   }
 }

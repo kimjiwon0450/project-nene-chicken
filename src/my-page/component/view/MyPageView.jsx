@@ -5,29 +5,38 @@ import { useMenu } from '../../context/MenuContext';
 import MyPageOrderBox from './MyPageOrderBox';
 import MyPageDeliveryBox from './MyPageDeliveryBox';
 import MyPageCouponBox from './MyPageCouponBox';
+import { Outlet, useNavigate } from 'react-router';
 
 const MyPageView = () => {
-  const [menuState, setMenuState] = useState();
   const { currMenu } = useMenu();
+  const navi = useNavigate();
 
   const switchCurrMenuFunc = () => {
     switch (currMenu) {
       case 1:
-        return <MyPageOrderBox />;
+        navi('/mypage/order');
+        return;
       case 2:
-        return <MyPageDeliveryBox />;
+        navi('/mypage/delivery');
+        return;
       case 3:
-        return <MyPageCouponBox />;
+        navi('/mypage/coupon');
+        return;
       default:
-        return <MyPageInfoBox />;
+        navi('/mypage/');
+        return;
     }
   };
 
   useEffect(() => {
-    setMenuState(switchCurrMenuFunc());
+    switchCurrMenuFunc();
   }, [currMenu]);
 
-  return <div className='my-page-wrap'>{menuState}</div>;
+  return (
+    <div className='my-page-wrap'>
+      <Outlet />
+    </div>
+  );
 };
 
 export default MyPageView;

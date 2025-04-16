@@ -1,10 +1,14 @@
 .Brand_Swrap {
   position: relative;
-  top: 0;
+  top: 184px;
   width: 100%;
   height: 100%;
   transition: 0.5s;
   background-color: white;
+
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 450px;
 }
 
 .StartupBox1 {
