@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from 'react'; // eslint-disable-line no-unused-vars
 import './ServiceBoxes.css';
 
+import find_store from '../assets/find-store.png';
+import gift from '../assets/gift.png';
+import event from '../assets/event.png';
+import delivery from '../assets/delivery.png';
+import icon_subLeft from '../assets/icon_subLeft.svg';
+import quick_order from '../assets/quick-order.png';
+import take_out from '../assets/take-out.png';
+
 function ServiceBoxes() {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -36,21 +44,21 @@ function ServiceBoxes() {
               가까운 네네치킨 매장을
               <br /> 찾아보세요
             </span>
-            <img src='/find-store.png' className='find-store' alt='네네치킨 매장찾기' />
+            <img src={find_store} className='find-store' alt='네네치킨 매장찾기' />
           </div>
           <div className='SbanBox color2 Cpointer'>
             <span>
               모바일교환권/금액권으로 마음을
               <br /> 선물하세요
             </span>
-            <img src='/gift.png' className='gift' alt='선물하기' />
+            <img src={gift} className='gift' alt='선물하기' />
           </div>
           <div className='SbanBox color3 Cpointer'>
             <span>
               다양한 이벤트 재미를
               <br /> 경험해보세요!
             </span>
-            <img src='/event.png' className='event' alt='이벤트정보보기' />
+            <img src={event} className='event' alt='이벤트정보보기' />
           </div>
         </div>
       </div>
@@ -59,7 +67,7 @@ function ServiceBoxes() {
         <div className='ProcessBox'>
           <div className='ProcessList'>
             <div>
-              <img src='/delivery.png' alt='배달주문' />
+              <img src={delivery} alt='배달주문' />
             </div>
             <div className='PS_title'>
               <div className='tBox'>
@@ -67,7 +75,7 @@ function ServiceBoxes() {
                   <span className='PStype'>배달</span>주문
                 </div>
                 <span className='ticon' />
-                <img src='/icon_subLeft.svg' alt='' />
+                <img src={icon_subLeft} alt='' />
               </div>
             </div>
             <div className='PS_Stitle'>원하는 곳에서 받아 보세요</div>
@@ -75,7 +83,7 @@ function ServiceBoxes() {
 
           <div className='ProcessList'>
             <div>
-              <img src='/take-out.png' alt='포장주문' />
+              <img src={take_out} alt='포장주문' />
             </div>
             <div className='PS_title'>
               <div className='tBox'>
@@ -83,14 +91,14 @@ function ServiceBoxes() {
                   <span className='PStype'>포장</span>주문
                 </div>
                 <span className='ticon' />
-                <img src='/icon_subLeft.svg' alt='' />
+                <img src={icon_subLeft} alt='' />
               </div>
             </div>
           </div>
 
           <div className='ProcessList quick'>
             <div>
-              <img src='/quick-order.png' alt='퀵오더' />
+              <img src={quick_order} alt='퀵오더' />
             </div>
             <div className='PS_title'>
               <div className='tBox'>
@@ -98,7 +106,7 @@ function ServiceBoxes() {
                   <span className='PStype'>퀵</span>오더
                 </div>
                 <span className='ticon' />
-                <img src='/icon_subLeft.svg' alt='' />
+                <img src={icon_subLeft} alt='' />
               </div>
             </div>
             {/* PS_title 닫는 태그 추가 */}

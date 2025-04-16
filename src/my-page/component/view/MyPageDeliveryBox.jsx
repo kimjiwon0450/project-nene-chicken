@@ -22,7 +22,7 @@ const MyPageDeliveryBox = () => {
             <div className='add-wrap'>
               <div className='add-box'>
                 <div className='add-content'>
-                  <div className='address'>
+                  <div className='Daddress'>
                     <div className='title'>
                       <span className='title-span'>
                         <img src='https://nenechicken.com/images/icon_location_home.svg' alt='' />
@@ -39,7 +39,7 @@ const MyPageDeliveryBox = () => {
             <div className='add-wrap'>
               <div className='add-box'>
                 <div className='add-content'>
-                  <div className='address'>
+                  <div className='Daddress'>
                     <div className='title'>
                       <span className='title-span'>
                         <img

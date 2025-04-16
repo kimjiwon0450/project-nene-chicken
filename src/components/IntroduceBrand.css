@@ -1,17 +1,21 @@
 .Brand_Swrap {
   position: relative;
-  top: 0;
+  top: 184px;
   width: 100%;
   height: 100%;
   transition: 0.5s;
   background-color: white;
+
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 450px;
 }
 
 .StartupBox1 {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(/mapbak_new.png) no-repeat left;
+  background: url(../assets/mapbak_new.png) no-repeat left;
   background-size: 95% 80%;
   background-position: 0rem 8rem;
   margin-bottom: 4rem;
@@ -90,7 +94,7 @@
 }
 
 .StartupBox2 {
-  background: url(/brand-bak.png) no-repeat left;
+  background: url(../assets/brand-bak.png) no-repeat left;
   padding: 5rem 0;
   background-size: cover;
 }
@@ -148,13 +152,13 @@
 
 .ImgBox .img-con:first-child {
   width: 33%;
-  background: url(/why-img1.png) no-repeat center;
+  background: url(../assets/why-img1.png) no-repeat center;
   background-size: cover;
 }
 
 .ImgBox .img-con:last-child {
   width: 50%;
-  background: url(/why-img2.png) no-repeat center;
+  background: url(../assets/why-img2.png) no-repeat center;
   background-size: cover;
 }
 
@@ -187,7 +191,7 @@
 }
 
 .neneBox .infoTtx .icon {
-  background: url(/check_icon.svg) no-repeat center;
+  background: url(../assets/check_icon.svg) no-repeat center;
   width: 38px;
   height: 38px;
   background-size: 100% 100%;
@@ -244,6 +248,7 @@
   z-index: 1;
   display: flex;
   transition-property: transform;
+  justify-content: center;
 }
 
 .swiper-backface-hidden .swiper-slide {
@@ -294,7 +299,7 @@
 .BrandNENE .conB:first-child .nImgBox {
   width: 40%;
   border-radius: 20px;
-  background: url(/nene-bak1.png) no-repeat;
+  background: url(../assets/nene-bak1.png) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -302,7 +307,7 @@
 .BrandNENE .conB:last-child .nImgBox {
   width: 40%;
   border-radius: 20px;
-  background: url(/nene-bak2.png) no-repeat;
+  background: url(../assets/nene-bak2.png) no-repeat;
   background-size: cover;
   background-position: center;
 }

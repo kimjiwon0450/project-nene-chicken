@@ -56,7 +56,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 32px 80px;
+  padding: 32px 50px;
 }
 /* 왼쪽 로고 */
 .BottomLogoWrap {
@@ -117,7 +117,7 @@
   background-color: #5b3913;
 }
 
-/* Add padding to body to prevent content from hiding behind fixed header */
+/* Add padding to body to prevent content from hiding behind fixed header
 body {
-  padding-top: 172px; /* Adjust based on your header's total height (60px top nav + 1px divider + approx 111px bottom nav) */
-}
+  padding-top: 172px; /* Adjust based on your header's total height (60px top nav + 1px divider + approx 111px bottom nav) 
+} */
