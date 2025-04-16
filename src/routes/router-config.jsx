@@ -32,23 +32,23 @@ export const router = createBrowserRouter(
           path: 'mypage/',
           element: <Mypage />,
           children: [
-          {
-            index: true,
-            element: <MyPageInfoBox />,
-          },
-          {
-            path: 'order',
-            element: <MyPageOrderBox />,
-          },
-          {
-            path: 'delivery',
-            element: <MyPageDeliveryBox />,
-          },
-          {
-            path: 'coupon',
-            element: <MyPageCouponBox />,
-          },
-        ],
+            {
+              index: true,
+              element: <MyPageInfoBox />,
+            },
+            {
+              path: 'order',
+              element: <MyPageOrderBox />,
+            },
+            {
+              path: 'delivery',
+              element: <MyPageDeliveryBox />,
+            },
+            {
+              path: 'coupon',
+              element: <MyPageCouponBox />,
+            },
+          ],
         },
       ],
     },

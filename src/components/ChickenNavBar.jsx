@@ -124,11 +124,24 @@ function ChickenNavBar() {
 
           {/* ✅ 버튼을 감싸는 래퍼 */}
           <div className='modal-buttons'>
-            <button onClick={() => setModalOpen(false)}>
+            <button
+              onClick={() => {
+                setModalOpen(false);
+                isLogin && navigator('/mypage');
+                !isLogin && navigator('/login');
+              }}
+            >
               <img src={RiderIcon} alt='라이더 아이콘' />
               <h1>배달주문 &gt; </h1>
             </button>
-            <button onClick={() => setModalOpen(false)}>
+            <button
+              onClick={() => {
+                setModalOpen(false);
+                isLogin && navigator('/mypage');
+                !isLogin && navigator('/login');
+              }}
+            >
+              {' '}
               <img src={StoreIcon} alt='매장 아이콘' />
               <h1>포장주문 &gt; </h1>
             </button>
