@@ -1,18 +1,31 @@
 import React from 'react';
 import './MyPageInfoBox.css';
 import { useMenu } from '../../context/MenuContext';
+import { useLogin } from '../../../context/loginContext';
+import { useNavigate } from 'react-router';
 
 const MyPageInfoBox = () => {
+  const { logout } = useLogin();
+  const navi = useNavigate();
+
   const { changeMenu } = useMenu();
   return (
     <div className='info-box'>
       <div className='user-title'>
         <div>
-          <span className='user'>강하늘</span> 님 안녕하세요!
+          <span className='user'>김춘식</span> 님 안녕하세요!
         </div>
         <div>
           <span className='btn-user'>개인정보수정</span>
-          <span className='btn-user'>로그아웃</span>
+          <span
+            className='btn-user'
+            onClick={() => {
+              logout();
+              navi('/');
+            }}
+          >
+            로그아웃
+          </span>
         </div>
       </div>
       <div className='my-menu-wrap'>

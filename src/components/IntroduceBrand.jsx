@@ -6,7 +6,7 @@ const IntroduceBrand = () => {
     <div className='Brand_Swrap'>
       <div className='StartupBox1'>
         <div className='HeadTitle'>
-          <img src='/box1-headerimg.png' className='BrandTimg' alt='브랜드 헤더 이미지' />
+          <img src='../assets/box1-headerimg.png' className='BrandTimg' alt='브랜드 헤더 이미지' />
           <div className='title'>
             세계로 뻗어나가는 브랜드,<span className='point'>네네치킨</span>
           </div>
@@ -93,13 +93,25 @@ const IntroduceBrand = () => {
         <div className='swiper Sub1Bn'>
           <div className='swiper-wrapper'>
             <div className='swiper-slide'>
-              <img src='/Startup_sub1-1.png' style={{ width: '100%' }} alt='Startup sub1-1' />
+              <img
+                src='../assets/Startup_sub1-1.png'
+                style={{ width: '100%' }}
+                alt='Startup sub1-1'
+              />
             </div>
             <div className='swiper-slide'>
-              <img src='/Startup_sub1-2.png' style={{ width: '100%' }} alt='Startup sub1-2' />
+              <img
+                src='../assets/Startup_sub1-2.png'
+                style={{ width: '100%' }}
+                alt='Startup sub1-2'
+              />
             </div>
             <div className='swiper-slide'>
-              <img src='/Startup_sub1-3.png' style={{ width: '100%' }} alt='Startup sub1-3' />
+              <img
+                src='../assets/Startup_sub1-3.png'
+                style={{ width: '100%' }}
+                alt='Startup sub1-3'
+              />
             </div>
           </div>
         </div>
@@ -123,13 +135,25 @@ const IntroduceBrand = () => {
         <div className='swiper Sub2Bn'>
           <div className='swiper-wrapper'>
             <div className='swiper-slide'>
-              <img src='/Startup_sub2-1.png' style={{ width: '100%' }} alt='Startup sub2-1' />
+              <img
+                src='../assets/Startup_sub2-1.png'
+                style={{ width: '100%' }}
+                alt='Startup sub2-1'
+              />
             </div>
             <div className='swiper-slide'>
-              <img src='/Startup_sub2-2.png' style={{ width: '100%' }} alt='Startup sub2-2' />
+              <img
+                src='../assets/Startup_sub2-2.png'
+                style={{ width: '100%' }}
+                alt='Startup sub2-2'
+              />
             </div>
             <div className='swiper-slide'>
-              <img src='/Startup_sub2-3.png' style={{ width: '100%' }} alt='Startup sub2-3' />
+              <img
+                src='../assets/Startup_sub2-3.png'
+                style={{ width: '100%' }}
+                alt='Startup sub2-3'
+              />
             </div>
           </div>
         </div>
@@ -153,13 +177,25 @@ const IntroduceBrand = () => {
         <div className='swiper Sub3Bn'>
           <div className='swiper-wrapper'>
             <div className='swiper-slide'>
-              <img src='/Startup_sub3-1.png' style={{ width: '100%' }} alt='Startup sub3-1' />
+              <img
+                src='../assets/Startup_sub3-1.png'
+                style={{ width: '100%' }}
+                alt='Startup sub3-1'
+              />
             </div>
             <div className='swiper-slide'>
-              <img src='/Startup_sub3-2.png' style={{ width: '100%' }} alt='Startup sub3-2' />
+              <img
+                src='../assets/Startup_sub3-2.png'
+                style={{ width: '100%' }}
+                alt='Startup sub3-2'
+              />
             </div>
             <div className='swiper-slide'>
-              <img src='/Startup_sub3-3.png' style={{ width: '100%' }} alt='Startup sub3-3' />
+              <img
+                src='../assets/Startup_sub3-3.png'
+                style={{ width: '100%' }}
+                alt='Startup sub3-3'
+              />
             </div>
           </div>
         </div>
@@ -182,16 +218,24 @@ const IntroduceBrand = () => {
           <div className='swiper-wrapper'>
             <div className='swiper-slide'>
               <img
-                src='/Startup_sub4-1.png?ver=1.1'
+                src='../assets/Startup_sub4-1.png?ver=1.1'
                 style={{ width: '100%' }}
                 alt='Startup sub4-1'
               />
             </div>
             <div className='swiper-slide'>
-              <img src='/Startup_sub4-2.png' style={{ width: '100%' }} alt='Startup sub4-2' />
+              <img
+                src='../assets/Startup_sub4-2.png'
+                style={{ width: '100%' }}
+                alt='Startup sub4-2'
+              />
             </div>
             <div className='swiper-slide' style={{ left: '-1px' }}>
-              <img src='/Startup_sub4-3.png' style={{ width: '100%' }} alt='Startup sub4-3' />
+              <img
+                src='../assets/Startup_sub4-3.png'
+                style={{ width: '100%' }}
+                alt='Startup sub4-3'
+              />
             </div>
           </div>
         </div>
@@ -215,7 +259,7 @@ const IntroduceBrand = () => {
         </div>
         <div style={{ margin: '-2rem 0', textAlign: 'center' }}>
           <img
-            src='/Startup_sub4-4_n.png'
+            src='../assets/Startup_sub4-4_n.png'
             style={{ width: '100%', maxWidth: '1200px' }}
             alt='Startup sub4-4'
           />
@@ -283,23 +327,23 @@ const IntroduceBrand = () => {
         <div className='swiper StartInner SubMenu2' style={{ paddingBottom: '5rem' }}>
           <div className='swiper-wrapper BrandMenu'>
             <div className='swiper-slide MenuList' style={{ width: '256px' }}>
-              <img src='/30038.jpg' alt='치즈스노윙' />
+              <img src='../assets/30038.jpg' alt='치즈스노윙' />
               <div className='name'>치즈스노윙</div>
             </div>
             <div className='swiper-slide MenuList' style={{ width: '256px' }}>
-              <img src='/30063.jpg' alt='오리엔탈파닭' />
+              <img src='../assets/30063.jpg' alt='오리엔탈파닭' />
               <div className='name'>오리엔탈파닭</div>
             </div>
             <div className='swiper-slide MenuList' style={{ width: '256px' }}>
-              <img src='/3813.jpg' alt='청양마요치킨' />
+              <img src='../assets/3813.jpg' alt='청양마요치킨' />
               <div className='name'>청양마요치킨</div>
             </div>
             <div className='swiper-slide MenuList' style={{ width: '256px' }}>
-              <img src='/30599.jpg' alt='핫블링치킨' />
+              <img src='../assets/30599.jpg' alt='핫블링치킨' />
               <div className='name'>핫블링치킨</div>
             </div>
             <div className='swiper-slide MenuList' style={{ width: '256px' }}>
-              <img src='/4415.jpg' alt='양념반후라이드반' />
+              <img src='../assets/4415.jpg' alt='양념반후라이드반' />
               <div className='name'>양념반후라이드반</div>
             </div>
           </div>
@@ -320,7 +364,7 @@ const IntroduceBrand = () => {
           </div>
           <div className='process_ST'>
             <div className='tit_circle flexC'>
-              <img src='/Psicon-0.png' alt='네네치킨 가게일러스트' />
+              <img src='../assets/Psicon-0.png' alt='네네치킨 가게일러스트' />
             </div>
             <div id='processPc'>
               <ul className='flexSB process01'>
@@ -331,11 +375,11 @@ const IntroduceBrand = () => {
                       가맹점 개설 상담
                       <br />및 경영 안내
                     </strong>
-                    <img src='/Psicon-1.svg' alt='Psicon-1' />
+                    <img src='../assets/Psicon-1.svg' alt='Psicon-1' />
                   </div>
                 </li>
                 <li className='arrow'>
-                  <img src='/icon_process1.svg' alt='화살표' />
+                  <img src='../assets/icon_process1.svg' alt='화살표' />
                 </li>
                 <li className='flexCol_C'>
                   <div className='process_item'>
@@ -344,20 +388,20 @@ const IntroduceBrand = () => {
                       상권분석
                       <br />및 매장선택
                     </strong>
-                    <img src='/Psicon-2.svg' alt='Psicon-2' />
+                    <img src='../assets/Psicon-2.svg' alt='Psicon-2' />
                   </div>
                 </li>
                 <li className='arrow'>
-                  <img src='/icon_process1.svg' alt='화살표' />
+                  <img src='../assets/icon_process1.svg' alt='화살표' />
                 </li>
                 <li className='flexCol_C'>
                   <div className='process_item'>
                     <span className='num'>STEP 3</span>
                     <strong className='tit'>가맹계약 체결</strong>
-                    <img src='/Psicon-3.svg' alt='Psicon-3' />
+                    <img src='../assets/Psicon-3.svg' alt='Psicon-3' />
                   </div>
                   <div className='arrow_bt MTREM1'>
-                    <img src='/icon_process3.svg' alt='화살표' />
+                    <img src='../assets/icon_process3.svg' alt='화살표' />
                   </div>
                 </li>
               </ul>
@@ -366,10 +410,10 @@ const IntroduceBrand = () => {
                   <div className='process_item'>
                     <span className='num'>STEP 4</span>
                     <strong className='tit'>인테리어 시공</strong>
-                    <img src='/Psicon-4.svg' alt='Psicon-4' />
+                    <img src='../assets/Psicon-4.svg' alt='Psicon-4' />
                   </div>
                   <div className='arrow_bt MTREM1'>
-                    <img src='/icon_process3.svg' alt='화살표' />
+                    <img src='../assets/icon_process3.svg' alt='화살표' />
                   </div>
                 </li>
                 <li className='arrow'></li>
@@ -382,10 +426,10 @@ const IntroduceBrand = () => {
                       오픈 및<br />
                       경영지도 관리
                     </strong>
-                    <img src='/Psicon-8.svg' alt='Psicon-8' />
+                    <img src='../assets/Psicon-8.svg' alt='Psicon-8' />
                   </div>
                   <div className='arrow_bt MTREM1'>
-                    <img src='/icon_process4.svg' alt='화살표' />
+                    <img src='../assets/icon_process4.svg' alt='화살표' />
                   </div>
                 </li>
               </ul>
@@ -398,27 +442,27 @@ const IntroduceBrand = () => {
                       <br />
                       <small>(3박4일 소요)</small>
                     </strong>
-                    <img src='/Psicon-5.svg' alt='Psicon-5' />
+                    <img src='../assets/Psicon-5.svg' alt='Psicon-5' />
                   </div>
                 </li>
                 <li className='arrow'>
-                  <img src='/icon_process2.svg' alt='화살표' />
+                  <img src='../assets/icon_process2.svg' alt='화살표' />
                 </li>
                 <li className='flexCol_C'>
                   <div className='process_item'>
                     <span className='num'>STEP 6</span>
                     <strong className='tit'>오픈 준비</strong>
-                    <img src='/Psicon-6.svg' alt='Psicon-6' />
+                    <img src='../assets/Psicon-6.svg' alt='Psicon-6' />
                   </div>
                 </li>
                 <li className='arrow'>
-                  <img src='/icon_process2.svg' alt='화살표' />
+                  <img src='../assets/icon_process2.svg' alt='화살표' />
                 </li>
                 <li className='flexCol_C'>
                   <div className='process_item'>
                     <span className='num'>STEP 7</span>
                     <strong className='tit'>테스트 운영</strong>
-                    <img src='/Psicon-7.svg' alt='Psicon-7' />
+                    <img src='../assets/Psicon-7.svg' alt='Psicon-7' />
                   </div>
                 </li>
                 <li className='flexCol_C moblie08'>
@@ -428,10 +472,10 @@ const IntroduceBrand = () => {
                       오픈 및<br />
                       경영지도 관리
                     </strong>
-                    <img src='/Psicon-8.svg' alt='Psicon-8' />
+                    <img src='../assets/Psicon-8.svg' alt='Psicon-8' />
                   </div>
                   <div className='arrow_bt MTREM1'>
-                    <img src='/icon_process4.svg' alt='화살표' />
+                    <img src='../assets/icon_process4.svg' alt='화살표' />
                   </div>
                 </li>
               </ul>
@@ -445,7 +489,7 @@ const IntroduceBrand = () => {
                       가맹점 개설 상담
                       <br />및 경영 안내
                     </strong>
-                    <img src='/Psicon-1.svg' alt='Psicon-1' />
+                    <img src='../assets/Psicon-1.svg' alt='Psicon-1' />
                   </div>
                 </li>
                 <li className='flexCol_C'>
@@ -455,21 +499,21 @@ const IntroduceBrand = () => {
                       상권분석
                       <br />및 매장선택
                     </strong>
-                    <img src='/Psicon-2.svg' alt='Psicon-2' />
+                    <img src='../assets/Psicon-2.svg' alt='Psicon-2' />
                   </div>
                 </li>
                 <li className='flexCol_C'>
                   <div className='process_item'>
                     <span className='num'>STEP 3</span>
                     <strong className='tit'>가맹계약 체결</strong>
-                    <img src='/Psicon-3.svg' alt='Psicon-3' />
+                    <img src='../assets/Psicon-3.svg' alt='Psicon-3' />
                   </div>
                 </li>
                 <li className='flexCol_C'>
                   <div className='process_item'>
                     <span className='num'>STEP 4</span>
                     <strong className='tit'>인테리어 시공</strong>
-                    <img src='/Psicon-4.svg' alt='Psicon-4' />
+                    <img src='../assets/Psicon-4.svg' alt='Psicon-4' />
                   </div>
                 </li>
                 <li className='flexCol_C'>
@@ -480,27 +524,27 @@ const IntroduceBrand = () => {
                       <br />
                       <small>(3박4일 소요)</small>
                     </strong>
-                    <img src='/Psicon-5.svg' alt='Psicon-5' />
+                    <img src='../assets/Psicon-5.svg' alt='Psicon-5' />
                   </div>
                 </li>
                 <li className='arrow'>
-                  <img src='/icon_process2.svg' alt='화살표' />
+                  <img src='../assets/icon_process2.svg' alt='화살표' />
                 </li>
                 <li className='flexCol_C'>
                   <div className='process_item'>
                     <span className='num'>STEP 6</span>
                     <strong className='tit'>오픈 준비</strong>
-                    <img src='/Psicon-6.svg' alt='Psicon-6' />
+                    <img src='../assets/Psicon-6.svg' alt='Psicon-6' />
                   </div>
                 </li>
                 <li className='arrow'>
-                  <img src='/icon_process2.svg' alt='화살표' />
+                  <img src='../assets/icon_process2.svg' alt='화살표' />
                 </li>
                 <li className='flexCol_C'>
                   <div className='process_item'>
                     <span className='num'>STEP 7</span>
                     <strong className='tit'>테스트 운영</strong>
-                    <img src='/Psicon-7.svg' alt='Psicon-7' />
+                    <img src='../assets/Psicon-7.svg' alt='Psicon-7' />
                   </div>
                 </li>
                 <li className='flexCol_C'>
@@ -510,7 +554,7 @@ const IntroduceBrand = () => {
                       오픈 및<br />
                       경영지도 관리
                     </strong>
-                    <img src='/Psicon-8.svg' alt='Psicon-8' />
+                    <img src='../assets/Psicon-8.svg' alt='Psicon-8' />
                   </div>
                 </li>
               </ul>
@@ -638,8 +682,16 @@ const IntroduceBrand = () => {
                   맞춤형 복합매장을 개설을 지원합니다.
                 </div>
                 <div className='SubconT-img'>
-                  <img className='nenecost1 on' src='/img_cost1.png' alt='네네치킨/네네피자' />
-                  <img className='nenecost2' src='/img_cost2.png' alt='네네치킨/봉구스밥버거' />
+                  <img
+                    className='nenecost1 on'
+                    src='../assets/img_cost1.png'
+                    alt='네네치킨/네네피자'
+                  />
+                  <img
+                    className='nenecost2'
+                    src='../assets/img_cost2.png'
+                    alt='네네치킨/봉구스밥버거'
+                  />
                 </div>
               </div>
               <div className='table_cost_warp' id='NENECOST1'>
