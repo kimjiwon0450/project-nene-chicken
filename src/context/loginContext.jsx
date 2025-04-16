@@ -6,6 +6,8 @@ const LoginContext = createContext();
 // Provider 컴포넌트
 export const LoginProvider = ({ children }) => {
   const [isLogin, setIsLogin] = useState(localStorage.getItem('login') !== null);
+  const [IDSave, isIDSave] = useState();
+  const [PWSave, isPWSave] = useState();
 
   const login = () => {
     setIsLogin(true);

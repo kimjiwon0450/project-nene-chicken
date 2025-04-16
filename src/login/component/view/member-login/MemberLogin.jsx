@@ -27,8 +27,8 @@ const MemberLogin = () => {
 
   const IDChangeHandler = (id) => setCurrID(id);
   const PWChangeHandler = (pw) => setCurrPW(pw);
-  const IDSaveHandler = () => isIDSave(!IDSave);
-  const loginSaveHandler = () => isLoginSave(!loginSave);
+  const IDSaveHandler = (check) => isIDSave(check);
+  const loginSaveHandler = (check) => isLoginSave(check);
 
   const submitLoginHandler = () => {
     let finalID = currID;
@@ -43,12 +43,18 @@ const MemberLogin = () => {
     if (finalID === 'aaaa' && finalPW === '1111') {
       // 로그인 성공 처리
       // 1. 버튼 입력에 따라 local storage 저장
-      if (IDSave) localStorage.setItem('savedID', currID);
-      else localStorage.removeItem('saveID');
+
+      // 1. IDSave && loginSave => id, pw
+      // 2. IDSave && !loginSave => id
+      // 3. !IDSave && loginSave => id, pw
+      // 4. !IDSave && !loginSave =>
 
       if (loginSave) {
-        localStorage.setItem('savedPW', currPW);
-        localStorage.setItem('savedID', currID);
+        localStorage.setItem('savedPW', finalPW);
+        localStorage.setItem('savedID', finalID);
+      } else if (IDSave) {
+        localStorage.setItem('savedID', finalID);
+        localStorage.removeItem('savedPW', finalPW);
       } else {
         localStorage.removeItem('savedID');
         localStorage.removeItem('savedPW');

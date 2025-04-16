@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './LoginCheckBox.css';
 
 const LoginCheckBox = ({ text, handler, storageKey }) => {
-  const [check, setCheck] = useState(localStorage.getItem(storageKey));
+  const [check, setCheck] = useState(localStorage.getItem(storageKey) !== null);
 
   const changeHandler = () => {
-    handler();
     setCheck(!check);
+    handler(check);
   };
+
+  useEffect(() => {
+    handler(check);
+  }, [check]);
 
   return (
     <div className='login-check'>
