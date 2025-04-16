@@ -29,6 +29,8 @@ function ChickenNavBar() {
   const handleMainMenuClick = (item) => {
     if (item === '주문') {
       setModalOpen(true); // ✅ '주문' 클릭 시 모달 열기
+    } else if (item === '쿠폰 사용하기') {
+      !isLogin && navigator('/login');
     }
   };
 
