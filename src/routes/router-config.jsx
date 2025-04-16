@@ -13,24 +13,25 @@ import MyPageDeliveryBox from '../my-page/component/view/MyPageDeliveryBox';
 import MyPageCouponBox from '../my-page/component/view/MyPageCouponBox';
 
 // 라우터 설정
-export const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <RootLayout />,
-    // errorElement: <ErrorPage />,
-    children: [
-      {
-        index: true, // 부모 경로가 활성화 되었을 때 기본으로 사용할 컴포넌트
-        element: <MainPage />,
-      },
-      {
-        path: 'login',
-        element: <LoginPage />,
-      },
-      {
-        path: 'mypage/',
-        element: <Mypage />,
-        children: [
+export const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <RootLayout />,
+      // errorElement: <ErrorPage />,
+      children: [
+        {
+          index: true, // 부모 경로가 활성화 되었을 때 기본으로 사용할 컴포넌트
+          element: <MainPage />,
+        },
+        {
+          path: 'login',
+          element: <LoginPage />,
+        },
+        {
+          path: 'mypage/',
+          element: <Mypage />,
+          children: [
           {
             index: true,
             element: <MyPageInfoBox />,
@@ -48,14 +49,18 @@ export const router = createBrowserRouter([
             element: <MyPageCouponBox />,
           },
         ],
-      },
-    ],
-  },
+        },
+      ],
+    },
+    {
+      path: '/brand_startup',
+      element: <BrandStartUp />,
+    },
+  ],
   {
-    path: '/brand_startup',
-    element: <BrandStartUp />,
+    basename: '/project-nene-chicken',
   },
-]);
+);
 
 export default function Router() {
   return (

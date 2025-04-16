@@ -3,9 +3,9 @@ import './Banner.css';
 
 const Banner = () => {
   const images = [
-    '/assets/images/banner1.jpg', // 첫 번째 이미지
-    '/assets/images/banner2.jpg', // 두 번째 이미지
-    '/assets/images/banner3.jpg', // 세 번째 이미지
+    '../assets/banner1.jpg', // 첫 번째 이미지
+    '../assets/banner2.jpg', // 두 번째 이미지
+    '../assets/banner3.jpg', // 세 번째 이미지
   ];
 
   // 슬라이드 상태
