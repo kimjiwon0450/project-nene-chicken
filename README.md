@@ -19,7 +19,7 @@
 - 배너 슬라이더 구현
 - 메뉴 소개, 브랜드 스토리, 푸터 등 구성
 - 반응형 레이아웃 적용
-- 
+  
 ![Main1](https://github.com/user-attachments/assets/3cb5c9ca-4355-465c-b360-0b3dd4c610a5)
 
 ---
