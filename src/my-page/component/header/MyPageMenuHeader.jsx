@@ -12,10 +12,10 @@ const MyPageMenuHeader = () => {
   return (
     <div className='menu-header-tab'>
       <div className='tab' onClick={() => clickValidHandler(true)}>
-        <span className={tabState && 'on'}>포장/배달주문</span>
+        <span className={tabState ? 'on' : ''}>포장/배달주문</span>
       </div>
       <div className='tab' onClick={() => clickValidHandler(false)}>
-        <span className={!tabState && 'on'}>모바일교환권/금액권</span>
+        <span className={!tabState ? 'on' : ''}>모바일교환권/금액권</span>
       </div>
     </div>
   );

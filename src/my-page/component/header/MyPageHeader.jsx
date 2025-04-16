@@ -1,30 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import './MyPageHeader.css';
-import { useMenu } from '../../context/MenuContext';
 import MyPageMenuHeader from './MyPageMenuHeader';
 import MyPageDeliveryHeader from './MyPageDeliveryHeader';
 import MyPageCouponHeader from './MyPageCouponHeader';
+import { useLocation } from 'react-router';
 
 const MyPageHeader = () => {
   const [menuState, setMenuState] = useState();
-  const { currMenu } = useMenu();
+  const loc = useLocation();
 
   const switchCurrMenuFunc = () => {
-    switch (currMenu) {
-      case 1:
+    switch (loc.pathname) {
+      case '/mypage/order':
         return <MyPageMenuHeader />;
-      case 2:
+      case '/mypage/delivery':
         return <MyPageDeliveryHeader />;
-      case 3:
+      case '/mypage/coupon':
         return <MyPageCouponHeader />;
       default:
-        return;
+        return <div></div>;
     }
   };
 
   useEffect(() => {
     setMenuState(switchCurrMenuFunc());
-  }, [currMenu]);
+  }, [loc.pathname]);
 
   return (
     <div className='my-header-wrap'>

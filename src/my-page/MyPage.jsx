@@ -5,6 +5,7 @@ import MyPageView from './component/view/MyPageView';
 import { MenuProvider } from './context/MenuContext';
 
 const MyPage = () => {
+  
   return (
     <>
       <MenuProvider>

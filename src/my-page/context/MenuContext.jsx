@@ -10,6 +10,7 @@ export const MenuProvider = ({ children }) => {
   const [couponMenu, setCouponMenu] = useState(true);
 
   const changeMenu = (select) => {
+    setCurrMenu(0);
     setCurrMenu(select);
   };
 
