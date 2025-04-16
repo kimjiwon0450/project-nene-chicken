@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'; // eslint-disable-line no-unused-vars
 import './Banner.css';
+import image1 from '../assets/banner1.jpg';
+import image2 from '../assets/banner2.jpg';
+import image3 from '../assets/banner3.jpg';
 
 const Banner = () => {
-  const images = [
-    '../assets/banner1.jpg', // 첫 번째 이미지
-    '../assets/banner2.jpg', // 두 번째 이미지
-    '../assets/banner3.jpg', // 세 번째 이미지
-  ];
+  // eslint-disable-next-line prettier/prettier
+  const images = [image1, image2, image3];
 
   // 슬라이드 상태
   const [currentIndex, setCurrentIndex] = useState(0);
