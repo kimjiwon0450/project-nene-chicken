@@ -12,10 +12,10 @@ const MyPageCouponHeader = () => {
   return (
     <div className='coupon-header-tab'>
       <div className='tab' onClick={() => couponClickHandler(true)}>
-        <span className={tabState && 'on'}>쿠폰함</span>
+        <span className={tabState ? 'on' : ''}>쿠폰함</span>
       </div>
       <div className='tab' onClick={() => couponClickHandler(false)}>
-        <span className={!tabState && 'on'}>쿠폰다운로드</span>
+        <span className={!tabState ? 'on' : ''}>쿠폰다운로드</span>
       </div>
     </div>
   );

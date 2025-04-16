@@ -8,23 +8,25 @@ import MyPageCouponBox from './MyPageCouponBox';
 import { Outlet, useNavigate } from 'react-router';
 
 const MyPageView = () => {
-  const { currMenu } = useMenu();
+  const [renderBox, setRenderBox] = useState();
+
+  const { currMenu, selectMenu } = useMenu();
   const navi = useNavigate();
 
   const switchCurrMenuFunc = () => {
     switch (currMenu) {
       case 1:
         navi('/mypage/order');
-        return;
+        return <MyPageOrderBox />;
       case 2:
         navi('/mypage/delivery');
-        return;
+        return <MyPageDeliveryBox />;
       case 3:
         navi('/mypage/coupon');
-        return;
+        return <MyPageCouponBox />;
       default:
-        navi('/mypage/');
-        return;
+        navi('/mypage');
+        return <MyPageInfoBox />;
     }
   };
 
